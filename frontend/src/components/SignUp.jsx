@@ -44,7 +44,7 @@ const SignUp = () => {
 
   return (
     <Container maxWidth="sm">
-      <Box p={3} boxShadow={3} borderRadius={2} bgcolor="#fafafa">
+      <Box p={3} boxShadow={1} borderRadius={2} bgcolor="#fafafa">
         <Typography variant="h5" mb={2}>
           Create Account
         </Typography>
