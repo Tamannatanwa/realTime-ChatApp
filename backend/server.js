@@ -16,9 +16,9 @@ app.get("/api/chat", (req, res) => {
 })
 
 app.get("/api/chat/:id", (req, res) => {
-    const signleChat = chats.find((c) =>
+    const singleChat = chats.find((c) =>
         c._id === req.params.id)
-    res.send(signleChat)
+    res.send(singleChat)
 })
 
 
