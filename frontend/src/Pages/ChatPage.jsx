@@ -10,6 +10,8 @@ const ChatPage = () => {
             setChats(data.data)
         }
         catch (err) {
+            
+            console.error("Error fetching chats:", err);
 
         }
     }
