@@ -1,0 +1,99 @@
+/* App background */
+.appBackground {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 12px 0; /* decreased */
+}
+
+/* Title styling */
+.centerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* decreased */
+    margin-bottom: 12px; /* decreased */
+}
+
+.title {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2.25rem; /* smaller */
+    font-weight: 400;   /* thinner */
+    color: white;
+    text-align: center;
+    letter-spacing: -0.01em;
+    margin: 0;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Tabs styling */
+.tabsContainer {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 4px; /* decreased */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px; /* decreased */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    max-width: 360px;
+    width: 100%;
+}
+
+.tabItem {
+    text-transform: none;
+    border-radius: 6px;
+    padding: 8px 16px; /* smaller */
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400; /* thinner */
+    font-size: 0.85rem; /* smaller */
+    color: #6b7280;
+    transition: all 0.2s ease-in-out;
+    width: 50%;
+    min-height: 40px;
+    margin: 0;
+}
+
+.tabItem:hover {
+    background-color: #f1f5f9;
+    color: #374151;
+}
+
+.activeTab {
+    background-color: #1976d2;
+    color: white;
+    box-shadow: 0 1px 3px rgba(25, 118, 210, 0.3);
+}
+
+.activeTab:hover {
+    background-color: #1565c0;
+    box-shadow: 0 3px 6px rgba(25, 118, 210, 0.3);
+}
+
+/* Component container */
+.componentContainer {
+    padding: 0 12px; /* decreased */
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .title {
+        font-size: 2rem; /* even smaller */
+    }
+
+    .centerBox {
+        margin-top: 28px;
+        margin-bottom: 20px;
+    }
+
+    .tabsContainer {
+        max-width: 100%;
+        margin: 0 12px 20px 12px;
+    }
+
+    .tabItem {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
