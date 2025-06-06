@@ -4,12 +4,24 @@ const chats = require("./data/data");
 const connectDB = require("./config/db");
 const userRoutes = require("./routes/userRoutes");
 const { notFound, errorHandler } = require("./middleware/errorMidleware");
+const cors = require("cors");
 const app = express()
 app.use(express.json())
 
 dotenv.config();
 
+
+
 connectDB()
+
+
+const corsOptions = {
+  origin: ["http://localhost:3000", "http://localhost:5173"], // Allow your frontend URLs
+  credentials: true,
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
 
 // app.use(express.json())
 

@@ -5,7 +5,7 @@ const router = expess.Router()
 
 
 
-router.post("/",registerUser);
+router.post("/register",registerUser);
 
 router.post("/login",authUser);
 
